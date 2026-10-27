@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SIBHC – Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>SIBHC</h1>
+    <p class="tagline">Selective Instant Browser History Cleaner</p>
+    <p class="sub">Write one rule per line. Matching is case-insensitive; any history entry that contains the text is deleted instantly.</p>
+
+    <section>
+      <label for="urlRules">URL matches</label>
+      <textarea id="urlRules" spellcheck="false" placeholder="google&#10;youtube.com/watch&#10;/^https?:\/\/(www\.)?example\.com/"></textarea>
+      <input type="text" id="urlTest" class="test" spellcheck="false" placeholder="Test: type a URL to see whether it matches">
+      <div id="urlTestResult" class="test-result"></div>
+    </section>
+
+    <section>
+      <label for="titleRules">Page title matches</label>
+      <textarea id="titleRules" spellcheck="false" placeholder="google&#10;Search results"></textarea>
+      <input type="text" id="titleTest" class="test" spellcheck="false" placeholder="Test: type a page title to see whether it matches">
+      <div id="titleTestResult" class="test-result"></div>
+    </section>
+
+    <div class="actions">
+      <button id="save" class="primary">Save</button>
+      <button id="sweep">Scan existing history and delete matches now</button>
+      <span id="msg"></span>
+    </div>
+
+    <p class="note">Tip: write a line as <code>/pattern/</code> to use a regular expression. Lines starting with <code>#</code> are ignored.</p>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>

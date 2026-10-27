@@ -1,0 +1,59 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #1c1c1e;
+  color: #e8e8e8;
+  font-family: system-ui, "Segoe UI", sans-serif;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 28px 20px 40px; }
+h1 { font-size: 22px; margin: 0 0 6px; }
+.sub { color: #9a9aa0; font-size: 14px; margin: 0 0 22px; }
+section { margin-bottom: 20px; }
+label { display: block; font-weight: 600; margin-bottom: 8px; }
+textarea {
+  width: 100%;
+  min-height: 160px;
+  resize: vertical;
+  background: #141416;
+  color: #f0f0f0;
+  border: 1px solid #3a3a3d;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font: 13px/1.5 ui-monospace, Consolas, monospace;
+}
+textarea:focus { outline: none; border-color: #2ecc71; }
+.actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+button {
+  padding: 9px 16px;
+  border-radius: 8px;
+  border: 1px solid #3a3a3d;
+  background: #2c2c2e;
+  color: #e8e8e8;
+  cursor: pointer;
+  font-size: 14px;
+}
+button:hover { background: #3a3a3d; }
+button.primary { background: #2ecc71; border-color: #2ecc71; color: #08210f; font-weight: 600; }
+button.primary:hover { background: #27ae60; }
+#msg { color: #2ecc71; font-size: 13px; }
+.note { margin-top: 24px; font-size: 12px; color: #8e8e93; }
+code { background: #2c2c2e; padding: 1px 5px; border-radius: 4px; }
+
+input.test {
+  width: 100%;
+  margin-top: 8px;
+  padding: 9px 12px;
+  background: #141416;
+  color: #f0f0f0;
+  border: 2px solid #3a3a3d;
+  border-radius: 8px;
+  font: 13px ui-monospace, Consolas, monospace;
+  transition: border-color .12s ease, background .12s ease;
+}
+input.test:focus { outline: none; }
+input.test.match { border-color: #2ecc71; background: rgba(46,204,113,.08); }
+input.test.nomatch { border-color: #e74c3c; background: rgba(231,76,60,.08); }
+.test-result { min-height: 18px; margin-top: 6px; font-size: 12px; color: #8e8e93; }
+.test-result.match { color: #2ecc71; }
+.test-result.nomatch { color: #e74c3c; }
+.tagline { margin: -2px 0 14px; font-size: 13px; color: #8e8e93; letter-spacing: .2px; }
