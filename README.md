@@ -26,22 +26,6 @@ One rule per line.
 | `/^https?:\/\/(www\.)?example\.com/` | Regular expression (case-insensitive by default) |
 | `# comment` | Ignored |
 
-## Install
-
-### Temporary (for testing)
-
-1. Download or clone this repository.
-2. Open `about:debugging#/runtime/this-firefox`.
-3. Click **Load Temporary Add-on…** and select `manifest.json`.
-
-Temporary add-ons are removed when the browser closes.
-
-### Permanent
-
-Firefox-based browsers normally require extensions to be signed. You can get a free signature by submitting the extension to [addons.mozilla.org](https://addons.mozilla.org) as **self-distributed (unlisted)**, then installing the signed `.xpi`. Alternatively, use [`web-ext sign`](https://extensionworkshop.com/documentation/develop/web-ext-command-reference/#web-ext-sign). Check the current AMO documentation for the latest steps.
-
-Note: the add-on ID in `manifest.json` (`sibhc@example.org`) must be unique on AMO. Change it to your own before signing.
-
 ## Permissions
 
 | Permission | Why |
